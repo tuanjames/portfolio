@@ -16,7 +16,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: fontend.Dockerfile
+      dockerfile: frontend.Dockerfile
     container_name: myportfolio-frontend
     ports:
       - "5173:80"
