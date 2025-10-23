@@ -1,0 +1,17 @@
+# Node & frontend
+node_modules/
+dist/
+.env
+
+# Golang
+bin/
+*.exe
+*.out
+
+# Docker
+*.log
+
+# Python or misc caches
+__pycache__/
+*.pyc
+
