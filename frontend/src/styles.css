@@ -1,32 +1,77 @@
-/* Simple reset + base styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: system-ui, sans-serif;
-  background-color: #f5f7fa;
-  color: #222;
-  line-height: 1.6;
+/* Full screen container */
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  background: linear-gradient(135deg, #f0f4ff, #dce3f7);
 }
 
-.container {
-  max-width: 1000px;
-  margin: 2rem auto;
+/* Center box */
+.center-box {
+  width: 60%;              /* fixed width */
+  height: 95%;              /* scales with viewport height */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+/* Small hover effect */
+.center-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
-.card h2 {
-  color: #0078ff;
+/* Typography */
+h1 {
+  font-size: 1.2rem;
+  color: #1e40af;
   margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-bottom-right {
+  position: absolute;
+  bottom: 60px;
+  right: 80px;
+}
+
+/* Responsive tweak for mobile */
+@media (max-width: 600px) {
+  .center-box {
+    width: 80%;
+    height: 100%;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }
