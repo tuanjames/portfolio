@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Avatar from "./components/avatar";
 import imgAvatar from "./assets/img_avt.jpg";
+import AboutSection  from "./components/personal_info_card";
+import MyStackSection from "./components/stacks";
 
 export default function App() {
   const projects = [
@@ -18,6 +20,8 @@ export default function App() {
           phone="0909 123 456"
           facebook="https://www.facebook.com/huynh.anh.tuan.859337/"  
         />
+        <AboutSection />
+        <MyStackSection />
       </div>
     </div>
   );
