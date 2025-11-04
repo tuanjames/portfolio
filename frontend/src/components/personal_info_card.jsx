@@ -1,18 +1,31 @@
-import { useState } from "react";
+import { useState, useRef  } from "react";
 import "./styles/aboutme.css";
 
 export default function AboutSection() {
   const [open, setOpen] = useState(false);
+  const audioRef = useRef(null);
 
+
+  const handleToggle = () => {
+        setOpen(!open);
+
+        // Play music only when opening
+        if (!open && audioRef.current) {
+        audioRef.current.play().catch((err) => console.log("Audio play blocked:", err));
+        } else if (open && audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        }
+    };
   return (
     <div className="about-container">
       <button
-        className="toggle-bar"
-        onClick={() => setOpen(!open)}
+        className="toggle-bar" 
+        onClick={handleToggle}
       >
         {open ? "▲ Hide Info" : "▼ About Me"}
       </button>
-
+      <audio ref={audioRef} src="./bg_music.mp3" preload="auto" />
       <div className={`about-content ${open ? "open" : ""}`}>
         <p><strong>Name:</strong> Tuan Anh Huynh</p>
         <p><strong>Role:</strong> Software Developer</p>

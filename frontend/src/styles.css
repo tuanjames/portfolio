@@ -14,7 +14,9 @@
   gap: 0.5rem;
   justify-content: center; /* center horizontally */
   align-items: center;     /* center vertically */
-  background: linear-gradient(135deg, #f0f4ff, #dce3f7);
+  /* background: linear-gradient(135deg, #79c2c7, #e7c8f5); */
+  background-image: url("./assets/2pp.jpg");
+  background-size: cover;
 }
 
 /* Center box */
@@ -23,11 +25,11 @@
   flex-direction: column;
   width: 60%;              /* fixed width */
   height: 95%;              /* scales with viewport height */
-  background: white;
+  background: rgba(250, 250, 250, 0.082);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   padding: 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
