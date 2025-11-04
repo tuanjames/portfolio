@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import Avatar from "./components/avatar";
-import imgAvatar from "./assets/lffy.jpg";
+import imgAvatar from "/lffy.jpg";
 import AboutSection  from "./components/personal_info_card";
 import MyStackSection from "./components/stacks";
 import MyEduSection from "./components/education";
 import WorkHistorySection from "./components/work_history";
 import MyProjectSection from "./components/my_project";
+import MusicPlayer from "./components/music_player";
+
 
 export default function App() {
   return (
@@ -25,6 +27,8 @@ export default function App() {
         <WorkHistorySection />
         <MyProjectSection />
       </div>
+      <MusicPlayer />
+
     </div>
   );
 }

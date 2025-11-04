@@ -15,7 +15,7 @@ export default function MyProjectSection() {
 
       <div className={`about-content ${open ? "open" : ""}`}>
         <h3>My Projects:</h3>
-        <h1><strong>Project:</strong> I feel lazy now, wanna play a bit ? update this later :D</h1>
+        <h1><strong>Project:</strong> I feel lazy now, update later</h1>
 
       </div>
     </div>
