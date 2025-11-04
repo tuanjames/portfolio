@@ -13,7 +13,7 @@
 }
 
 .avatar-image {
-    width: 50%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -63,13 +63,22 @@
 
 /* Responsive tweak for mobile */
 @media (max-width: 600px) {
-  .avatar-card {
-    width: 100%;
-    height: 40%;
-  }
-  .avatar-image {
-    width: 50%;
-    height: 90%;
-  }
+    .avatar-card {
+        width: 100%;
+        height: 40%;
+    }
+    .avatar-image {
+        width: 40%;
+        height: 90%;
+    }
+    .info-section {
+        padding-top: 2rem;
+    }
+    .name-text {
+        font-size: 1.5rem;
+    }
+    .role-text {
+        font-size: 0.9rem;
+    }
 
 }
