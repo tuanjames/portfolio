@@ -19,7 +19,7 @@ export default function MusicPlayer() {
       <button onClick={toggleMusic}>
         {playing ? "⏸ Pause Music" : "▶ Click Me :)"}
       </button>
-      <audio ref={audioRef} src="/bg_music.mp3" loop preload="auto" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}bg_music.mp3`} loop preload="auto" />
     </div>
   );
 }
