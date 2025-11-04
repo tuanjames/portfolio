@@ -15,7 +15,7 @@
   justify-content: center; /* center horizontally */
   align-items: center;     /* center vertically */
   /* background: linear-gradient(135deg, #79c2c7, #e7c8f5); */
-  background-image: url("./2pp.jpg");
+  background-image: url("/2pp.jpg");
   background-size: cover;
 }
 
